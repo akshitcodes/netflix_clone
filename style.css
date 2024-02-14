@@ -1,0 +1,179 @@
+ *{
+    padding: 0px;
+    margin: 0px;
+ }
+ body{
+    background-color: black;
+ }
+ .main{
+    background-image:url("/images/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    background-position: center center;  
+    height: 95vh;
+    position: relative;
+
+ }
+nav{
+    /* position: absolute; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 70vw;
+    margin-left: 12vw;
+    padding: 20px;
+} 
+#right{
+    z-index: 10;
+   
+}
+#right button{
+   font-size: 20px;
+}
+ #lang{
+    padding: 5px;
+    background-color:inherit;
+    color: azure;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+#login{
+   background-color: red;
+   color: azure;
+   padding: 8px;
+   border-radius: 8px;
+
+}
+nav #logo{
+    
+    width: 130px;
+    position: relative;
+    z-index: 8;
+} 
+.main .box{
+    position: absolute;
+    top: 0;
+    height: 95vh;
+    width: 100%;
+    opacity: 0.6;
+    background-color: black;
+  
+}
+.mid{
+    display: flex;
+    height: 100%;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 29px;
+   
+}
+/* @media (min-width:900px) {
+    #flexy{
+        display:flex;
+        flex-direction: column;
+    }
+    
+} */
+@media (max-width:428px){
+    nav{
+        flex-direction: column;
+    }
+}
+ 
+.mid> :first-child{
+    font-weight: bolder;
+    font-size: 48px;
+}
+.mid> :nth-child(2){
+  font-size: 24px;
+}
+.mid> :nth-child(3){
+    font-size: 20px;
+}
+#lang{
+    border:2px solid white;
+}
+
+#email{
+    background: inherit;
+    color: white;
+    border: 1px solid white;
+    
+}
+
+#flexy input{
+    margin: 10px;
+}
+#start{
+    background-color: red;
+    color: white;
+    font-size: 28px;
+    padding: 15px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.mid input{
+    padding: 5px;
+    font-size: 28px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.seperate{
+    background-color: gray;
+    height:6px;
+    width: 100%;
+}
+.first{
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    /* top: 0; */
+    /* left: 150px; */
+    /* width: 80vw; */
+    flex-wrap: wrap;
+}
+#one_text{
+    display:flex;
+    flex-direction: column;
+}
+#one_text :nth-child(1){
+font-weight: 900;
+font-size: 48px;
+}
+#one_text :nth-child(2){
+    font-size: 24px;
+}
+.first img{
+    position: relative;
+    z-index: 10;
+    width:min-content;
+}
+.first video{
+    top: 200px;
+    position: absolute;
+    right: 100px;
+}
+.second{
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+.two_text{
+    display:flex;
+    flex-direction: column;
+}
+.two_text :nth-child(1){
+font-weight: 900;
+font-size: 48px;
+}
+.two_text :nth-child(2){
+    font-size: 24px;
+}
