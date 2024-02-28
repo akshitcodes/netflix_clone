@@ -4,17 +4,22 @@
  }
  body{
     background-color: black;
+    width:100vw
  }
  .main{
     background-image:url("/images/bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100vw;
+    min-height: 90vh;
     background-position: center center;  
-    height: 95vh;
+    /* height: 95vh; */
     position: relative;
-
  }
+
+media img {
+    width: 100%;
+}
+
 nav{
     /* position: absolute; */
     display: flex;
@@ -28,7 +33,7 @@ nav{
     z-index: 10;
    
 }
-#right button{
+#right lang{
    font-size: 20px;
 }
  #lang{
@@ -39,9 +44,13 @@ nav{
     border-radius: 5px;
 }
 #login{
+    font-size: 12px;
    background-color: red;
    color: azure;
-   padding: 8px;
+   padding-top: 8px;
+   padding-bottom: 8px;
+   padding-left: 15px;
+   padding-right: 15px;
    border-radius: 8px;
 
 }
@@ -54,13 +63,13 @@ nav #logo{
 .main .box{
     position: absolute;
     top: 0;
-    height: 95vh;
+    height: 90vh;
     width: 100%;
     opacity: 0.6;
     background-color: black;
-  
 }
 .mid{
+    margin-top: 7rem;
     display: flex;
     height: 100%;
     position: relative;
@@ -102,12 +111,11 @@ nav #logo{
 #email{
     background: inherit;
     color: white;
-    border: 1px solid white;
-    
+    border: 1px solid white;width: 100%;
 }
 
 #flexy input{
-    margin: 10px;
+    margin: 1rem;
 }
 #start{
     background-color: red;
@@ -124,7 +132,7 @@ nav #logo{
     border-radius: 5px;
 }
 .seperate{
-    background-color: gray;
+    background-color: rgb(35, 35, 35);
     height:6px;
     width: 100%;
 }
@@ -134,46 +142,131 @@ nav #logo{
     align-items: center;
     justify-content: center;
     position: relative;
+
     /* top: 0; */
     /* left: 150px; */
     /* width: 80vw; */
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
+    margin: auto;
+    margin-left: 10%;
+    margin-right: 10%;
+
 }
-#one_text{
+
+.one_text{
     display:flex;
     flex-direction: column;
 }
-#one_text :nth-child(1){
+.one_text :nth-child(1){
 font-weight: 900;
 font-size: 48px;
 }
-#one_text :nth-child(2){
+.one_text :nth-child(2){
     font-size: 24px;
 }
+.wrapper{
+width: 80%;
+position: relative;
+}
+
 .first img{
     position: relative;
-    z-index: 10;
-    width:min-content;
+    z-index: 100;
+    width: 100%;
 }
 .first video{
-    top: 200px;
+    top: 20%;
+    left: 13%;
+    width: 75%;
     position: absolute;
-    right: 100px;
+
 }
-.second{
+.second img{
+    
+    max-height: 30%;
+}
+/* .second{
     display: flex;
     color: white;
     align-items: center;
     justify-content: center;
+    flex-wrap:wrap-reverse;
 }
 .two_text{
     display:flex;
     flex-direction: column;
-}
+}*/
 .two_text :nth-child(1){
 font-weight: 900;
 font-size: 48px;
 }
 .two_text :nth-child(2){
+    font-size: 24px; 
+}
+@media  (width<=950px) {
+    .first{
+        flex-direction: column;
+    }
+    .one_text :nth-child(1){
+        font-weight: 900;
+        font-size: 36px;
+        }
+        .one_text :nth-child(2){
+            font-size: 18px;
+        }
+    
+}
+@media  (width<=950px) {
+    .second{
+        flex-direction: column;
+    }
+    .two_text :nth-child(1){
+        font-weight: 900;
+        font-size: 36px;
+        }
+        .two_text :nth-child(2){
+            font-size: 18px;
+        }
+    
+}
+.third video{
+
+        top: 9%;
+        left: 16%;
+        width: 66%;
+        position: absolute;
+}
+.faq{
+    color: white;
+}
+.faq h2 {
+    text-align: center;
+    font-size: 48px;
+}
+
+.faq {
+    background: black;
+    color: white;
+    padding: 34px;
+}
+
+.faqbox:hover {
+    background-color: #414141;
+    color: white;
+}
+
+.faqbox svg {
+    filter: invert(1);
+}
+
+.faqbox {
+    transition: all 1s ease-out;
     font-size: 24px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #2d2d2d;
+    padding: 24px;
+    max-width: 60vw;
+    margin: 8px auto;
+    cursor: pointer;
 }
